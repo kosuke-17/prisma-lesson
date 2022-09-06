@@ -20,3 +20,15 @@ npx prisma migrate dev --name init
 // 2回目以降のマイグレーション
 npx prisma migrate dev --name <migration_file_name>
 ```
+
+## Git Tips
+
+[commit 取り消し](https://qiita.com/shuntaro_tamura/items/06281261d893acf049ed)
+
+```
+// 直前の commit 取り消し
+git reset --soft HEAD^
+
+// n個前の commit 取り消し
+git reset --soft HEAD~{n}
+```
