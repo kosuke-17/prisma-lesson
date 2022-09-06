@@ -10,3 +10,13 @@
   - バージョン管理が行いやすい
 
 ## .env ファイル設置
+
+## prisma.schema のマイグレーション
+
+```
+// 初めてのマイグレーション(初回のみ)
+npx prisma migrate dev --name init
+
+// 2回目以降のマイグレーション
+npx prisma migrate dev --name <migration_file_name>
+```
